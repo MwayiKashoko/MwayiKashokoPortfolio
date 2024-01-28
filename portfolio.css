@@ -1,0 +1,242 @@
+/*Hex codes: Beige #DDC3A5, Black-brown #201E20, Tan #E0A96D*/
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6.32vh;
+}
+
+body {
+	margin: 0px;
+	background: #201E20;
+	font-family: Helvetica;
+	font-size: 1vw;
+}
+
+h1, h3 {
+	margin: 0px;
+}
+
+a:visited {
+	color: black;
+}
+
+a {
+	text-decoration: none;
+}
+
+#menu {
+	font-family: montserrat;
+	background: #DDC3A5;
+	position: fixed;
+	width: 100%;
+	height: 6.32vh;
+	line-height: 5.8vh;
+	display: flex;
+	justify-content: space-around;
+	vertical-align: middle;
+	z-index: 1;
+}
+
+#scrollBar {
+	position: fixed;
+	width: 15%;
+	height: 0.75vh;
+	margin-top: -0.75vh;
+	margin-left: 14.57%;
+	background-color: #8E4585;
+	border-radius: 1vw;
+	z-index: 2;
+}
+
+#whyIsItNotCentered {
+	font-family: Georgia;
+	font-size: 2vw;
+	margin-top: .15vh;
+}
+
+#ghostMenu {
+	width: 100%;
+	height: 6.32vh;
+}
+
+.links {
+	color: #ff6f61;
+	width: 15%;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.5vw;
+	transition: color 1s, box-shadow 0.3s;
+}
+
+.links:focus {
+  box-shadow: rgba(0, 0, 0, .5) 0 0 0 .161vw;
+}
+
+.links:hover {
+	color: red;
+	box-shadow: rgba(0, 0, 0, .35) 0 0.107vw 1.686vh;
+  opacity: 85%;
+  font-size: 3.37vh;
+}
+
+.links:active {
+	box-shadow: inset rgba(0, 0, 0, .35) 0 .107vw 1.686vh;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-40%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideInRight {
+	from {
+		transform: translateX(40%);
+	}
+
+	to {
+		transform: translateX(0%);
+	}
+}
+
+#galaxy {
+	width: 100vw;
+  height: 93.6vh;
+	background-image: url("Images/WhirpoolGalaxy.jpeg");
+	background-size: cover;
+	opacity: 60%;
+	text-align: center;
+}
+
+.onImage {
+	color: red;
+	font-family: Open Sans;
+}
+
+#onImageH1 {
+	font-size: 3vw;
+	animation: slideInLeft 1.5s;
+}
+
+#onImageH3 {
+	font-size: 1.5vw;
+	animation: slideInRight 1.5s;
+}
+
+#contactSites {
+	position: fixed;
+	bottom: 0;
+}
+
+#aboutMe {
+	color: green;
+	font-family: monospace;
+	text-align: center;
+	height: 89vh;
+}
+
+#aboutMeH1 {
+	font-family: Playfair Display;
+	margin-top: 5vh;
+	margin-bottom: 17.5vh;
+	font-size: 5vw;
+}
+
+#aboutMeDiv {
+	width: 50vw;
+}
+
+#skills {
+	color: #4BBC8E;
+	text-align: center;
+	background: #2F4858;
+	height: 94vh;
+}
+
+#skillsH1 {
+	font-family: Playfair Display;
+	margin-top: 5vh;
+
+	font-size: 5vw;
+}
+
+#languageTable {
+	margin-left: 25.7vw;
+}
+
+.langTDs {
+	padding: 2vw 5vw;
+	font-family: Roboto Slab;
+	font-size: 2vw;
+}
+
+.langImages {
+	width: 6vw;
+	display: block;
+	padding-bottom: 2vh;
+}
+
+#projects {
+	padding-top: 10vw;
+}
+
+.projectImages {
+	width: 30vw;
+}
+
+.descriptionText {
+	display: inline-block;
+	width: 35vw;
+	color: #D08261;
+	margin: 0px 10vw;
+	font-family: Open Sans;
+}
+
+.projectLinks {
+	text-decoration: underline;
+	color: lightskyblue;
+}
+
+.projectLinks:hover {
+  color: hotpink;
+}
+
+.projectLinks:active {
+  color: lightgreen;
+}
+
+#marioMedleyDiv {
+	margin-left: 10vw;
+	margin-bottom: 20vh;
+}
+
+#tetrisDiv {
+	text-align: right;
+	margin-right: 10vw;
+	margin-bottom: 30vh;
+}
+
+#solitaireDiv {
+	padding-top: 50vh;
+	margin-left: 10vw;
+	margin-bottom: 20vh;
+}
+
+#minesweeperDiv {
+	margin-right: 10vw;
+}
+
+#towerDefenseDiv {
+	padding-top: 50vh;
+	margin-left: 10vw;
+	padding-bottom: 15vh;
+}
+
+.logos {
+	width: 3.5vw;
+	padding: 1.05vh 0.536vw;
+}

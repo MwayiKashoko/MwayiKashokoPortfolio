@@ -1,0 +1,67 @@
+body {
+	background: #201E20;
+	font-size: 1vw;
+}
+
+div {
+	display: inline-block;
+}
+
+.projectImages {
+	width: 30vw;
+}
+
+.descriptionText {
+	display: inline-block;
+	width: 35vw;
+	color: #D08261;
+	margin: 0px 10vw;
+	font-family: Open Sans;
+}
+
+.projectLinks {
+	text-decoration: underline;
+	color: lightskyblue;
+}
+
+.projectLinks:hover {
+  color: hotpink;
+}
+
+.projectLinks:active {
+  color: lightgreen;
+}
+
+#tetrisDiv {
+	padding-top: 20vh;
+	margin-left: 10vw;
+	margin-bottom: 30vh;
+}
+
+#lorenzSystemDiv {
+	text-align: right;
+	margin-right: 10vw;
+	padding-bottom: 30vh;
+}
+
+#mandelbrotSetDiv {
+	margin-left: 10vw;
+	margin-bottom: 20vh;
+}
+
+#juliaSetDiv {
+	text-align: right;
+	margin-right: 10vw;
+	padding-bottom: 30vh;
+}
+
+#sineJuliaSetDiv {
+	margin-left: 10vw;
+	margin-bottom: 20vh;
+}
+
+#calculatorDiv {
+	text-align: right;
+	margin-right: 10vw;
+	padding-bottom: 30vh !important;
+}
