@@ -159,25 +159,77 @@ a {
 
 #skillsH1 {
 	font-family: Playfair Display;
-	margin-top: 5vh;
-
+	margin-top: 5vh !important;
+	padding-top: 5vh;
 	font-size: 5vw;
+	margin: auto;
 }
 
-#languageTable {
-	margin-left: 25.7vw;
+#gridContainer {
+	display: grid;
+	margin-top: 8vh !important;
+	gap: 50px 0px;
+	width: 50%;
+	margin: auto;
 }
 
-.langTDs {
-	padding: 2vw 5vw;
+.gridItem {
 	font-family: Roboto Slab;
 	font-size: 2vw;
 }
 
+#item1 {
+	grid-column: 1;
+  grid-row: 1;
+}
+
+#item2 {
+	grid-column: 2;
+  grid-row: 1;
+}
+
+#item3 {
+	grid-column: 3;
+  grid-row: 1;
+}
+
+#item4 {
+	grid-column: 1;
+  grid-row: 2;
+}
+
+#item5 {
+	grid-column: 2;
+  grid-row: 2;
+}
+
+#item6 {
+	grid-column: 3;
+  grid-row: 2;
+}
+
+#item7 {
+	grid-column: 1;
+  grid-row: 3;
+}
+
+#item8 {
+	grid-column: 2;
+  grid-row: 3;
+}
+
+#item9 {
+	grid-column: 3;
+  grid-row: 3;
+}
+
+#item10 {
+	grid-column: 2;
+  grid-row: 4;
+}
+
 .langImages {
 	width: 6vw;
-	display: block;
-	padding-bottom: 2vh;
 }
 
 #projects {
