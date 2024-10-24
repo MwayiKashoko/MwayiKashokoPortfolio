@@ -224,7 +224,17 @@ a {
 }
 
 #item10 {
+	grid-column: 1;
+  grid-row: 4;
+}
+
+#item11 {
 	grid-column: 2;
+  grid-row: 4;
+}
+
+#item12 {
+	grid-column: 3;
   grid-row: 4;
 }
 
@@ -266,26 +276,26 @@ a {
 	margin-bottom: 20vh;
 }
 
+#IOSAppImage {
+	margin-bottom: 20vh;
+	width: 40vw;
+}
+
 #tetrisDiv {
 	text-align: right;
-	margin-right: 10vw;
+	margin-left: 10vw;
 	margin-bottom: 30vh;
 }
 
 #solitaireDiv {
 	padding-top: 50vh;
-	margin-left: 10vw;
+	margin-right: 10vw;
 	margin-bottom: 20vh;
 }
 
 #minesweeperDiv {
-	margin-right: 10vw;
-}
-
-#towerDefenseDiv {
-	padding-top: 50vh;
 	margin-left: 10vw;
-	padding-bottom: 15vh;
+	padding-bottom: 35vh;
 }
 
 .logos {
