@@ -1,67 +1,68 @@
 body {
 	background: #201E20;
-	font-size: 1vw;
-}
-
-div {
+	font-size: 1vw; /* okay to keep */
+  }
+  
+  div {
 	display: inline-block;
-}
-
-.projectImages {
+  }
+  
+  .projectImages {
 	width: 30vw;
-}
-
-.descriptionText {
+  }
+  
+  .descriptionText {
 	display: inline-block;
 	width: 35vw;
 	color: #D08261;
-	margin: 0px 10vw;
-	font-family: Open Sans;
-}
-
-.projectLinks {
+	margin: 0 10vw;
+	font-family: Open Sans, sans-serif;
+  }
+  
+  .projectLinks {
 	text-decoration: underline;
 	color: lightskyblue;
-}
-
-.projectLinks:hover {
-  color: hotpink;
-}
-
-.projectLinks:active {
-  color: lightgreen;
-}
-
-#tetrisDiv {
+  }
+  
+  .projectLinks:hover {
+	color: hotpink;
+  }
+  
+  .projectLinks:active {
+	color: lightgreen;
+  }
+  
+  #tetrisDiv {
 	padding-top: 20vh;
 	margin-left: 10vw;
 	margin-bottom: 30vh;
-}
-
-#lorenzSystemDiv {
+  }
+  
+  #lorenzSystemDiv {
 	text-align: right;
 	margin-right: 10vw;
 	padding-bottom: 30vh;
-}
-
-#mandelbrotSetDiv {
+  }
+  
+  #mandelbrotSetDiv {
 	margin-left: 10vw;
 	margin-bottom: 20vh;
-}
-
-#juliaSetDiv {
+  }
+  
+  #juliaSetDiv {
 	text-align: right;
 	margin-right: 10vw;
 	padding-bottom: 30vh;
-}
-
-#sineJuliaSetDiv {
+  }
+  
+  #sineJuliaSetDiv {
 	margin-left: 10vw;
 	margin-bottom: 20vh;
-}
-
-#calculatorDiv {
+  }
+  
+  #calculatorDiv {
 	text-align: right;
 	margin-right: 10vw;
 	padding-bottom: 30vh !important;
-}
+  }
+  
