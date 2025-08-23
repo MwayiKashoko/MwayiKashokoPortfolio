@@ -32,7 +32,7 @@
 html {
 	scroll-behavior: smooth;
 	scroll-padding-top: 6.32vh;
-  }
+}
   
   body {
 	margin: 0;
@@ -76,16 +76,18 @@ html {
 	width: 15%;
 	height: 0.75vh;
 	margin-top: -0.75vh;
-	margin-left: 14.57%;
+	margin-left: 17.5%;
 	background-color: #8E4585;
 	border-radius: 1vw;
 	z-index: 2;
   }
   
-  #whyIsItNotCentered {
+  #myName {
 	font-family: Georgia, serif;
 	font-size: 2vw;
 	margin-top: 0.15vh;
+	width: 15%;
+	text-align: center;
   }
   
   .links {
@@ -171,6 +173,54 @@ html {
 	margin: auto;
   }
   
+  #experience {
+	margin-top: 5vh;
+	font-family: "Open Sans", sans-serif;
+	text-align: center;
+	background: #012d5a;
+	height: 96vh;
+	color: white;
+	position: relative;
+  }
+
+  .date, .job, .jobImage {
+	position: absolute;
+  }
+
+  .date, .job {
+	margin-top: 5%;
+  }
+
+  .date {
+	left: 15%;
+	opacity: 0.7;
+  }
+
+  .job {
+	left: 50%;
+	transform: translateX(-50%);
+  }
+
+  .jobImage {
+	left: 67.5%;
+  }
+
+  hr {
+	margin-bottom: 5vh;
+	color: white;
+	background-color: white;
+  }
+
+  #experienceListUSAA {
+	text-align: left;
+	margin-top: 16%;
+  }
+
+  li {
+	width: 50vw;
+	margin-left: 25%;
+  }
+
   /* Skills Section */
   #skills {
 	color: #4BBC8E;
@@ -181,7 +231,6 @@ html {
   
   #skillsH1 {
 	font-family: "Playfair Display", serif;
-	margin-top: 5vh;
 	padding-top: 5vh;
 	font-size: 5vw;
 	width: 50%;
