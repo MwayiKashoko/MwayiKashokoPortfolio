@@ -3,6 +3,8 @@ window.onload = function() {
 		return Math.floor(Math.random() * (max-min+1))+min;
 	}
 
+	const names = ["home", "aboutMe", "experience", "skills", "projects"];
+	const scale = 16.65;
 	const galaxyImage = document.getElementById("galaxy");
 	const imageSources = ["Images/BubbleNebula.jpeg", "Images/Messier106.jpeg", "Images/NGC1300.jpeg", "Images/NGC2008.jpeg", "Images/NGC2841.jpeg", "Images/NGC3717.jpeg", "Images/NGC4826.jpeg", "Images/NGC7049.jpeg", "Images/Ngc1792.jpeg", "Images/SombreroGalaxy.jpeg", "Images/StellarForge.jpeg", "Images/WhirpoolGalaxy.jpeg"];
 
@@ -12,82 +14,43 @@ window.onload = function() {
 
 	const menuDiv = document.getElementById("menu");
 	const scrollBarDiv = document.getElementById("scrollBar");
-	let scrollBarOffset = "0vw";
+	let scrollBarOffset = 0;
 
 	const scrollBarAnimation = (translateX) => {
 		const animation = `@keyframes translate`;
 	}
 
-	const findScrollBar = () => {
+	(() => {
 		const loc = location.href;
 
-		if (loc.indexOf("aboutMe") > -1) {
-			scrollBarDiv.style.transform = "translateX(22.25vw)";
-			scrollBarOffset = "22.25vw";
-		} else if (loc.indexOf("skills") > -1) {
-			scrollBarDiv.style.transform = "translateX(44.55vw)";
-			scrollBarOffset = "44.55vw";
-		} else if (loc.indexOf("projects") > -1) {
-			scrollBarDiv.style.transform = "translateX(66.79vw)";
-			scrollBarOffset = "66.79vw";
-		}
-	}
-
-	findScrollBar();
+		names.forEach((elem, i) => {
+			if (loc.indexOf(elem) > -1) {
+				scrollBarDiv.style.transform = `translateX(${scale*i}vw)`;
+				scrollBarOffset = scale*i;
+			}
+		});
+	})();
 
 	menuDiv.onclick = () => {
 		setTimeout(() => {
 			const loc = location.href;
 
-			if (loc.indexOf("home") > -1) {
-				scrollBarDiv.animate([{ 
-					transform: `translateX(${scrollBarOffset})`
-				}, { 
-	  				transform: "translateX(0)"
-	  			}], {
-	  				duration: 1000,
-	  				easing: "ease-in-out",
-	  				fill: "forwards"
-				});
+			names.forEach((elem, i) => {
+				if (loc.indexOf(elem) > -1) {
+					let offset = scale*i;
+					scrollBarDiv.animate([{ 
+						transform: `translateX(${scrollBarOffset}vw)`
+					}, { 
+						transform: `translateX(${offset}vw)`
+					}], {
+						duration: 1000,
+						easing: "ease-in-out",
+						fill: "forwards"
+					});
 
-				scrollBarOffset = "0vw";
-			} else if (loc.indexOf("aboutMe") > -1) {
-				scrollBarDiv.animate([{ 
-					transform: `translateX(${scrollBarOffset})`
-				}, { 
-	  				transform: "translateX(22.25vw)"
-	  			}], {
-	  				duration: 1000,
-	  				easing: "ease-in-out",
-	  				fill: "forwards"
-				});
-
-				scrollBarOffset = "22.25vw";
-			} else if (loc.indexOf("skills") > -1) {
-				scrollBarDiv.animate([{ 
-					transform: `translateX(${scrollBarOffset})`
-				}, { 
-	  				transform: "translateX(44.55vw)"
-	  			}], {
-	  				duration: 1000,
-	  				easing: "ease-in-out",
-	  				fill: "forwards"
-				});
-
-				scrollBarOffset = "44.55vw";
-			} else if (loc.indexOf("projects") > -1) {
-				scrollBarDiv.animate([{ 
-					transform: `translateX(${scrollBarOffset})`
-				}, { 
-	  				transform: "translateX(66.79vw)"
-	  			}], {
-	  				duration: 1000,
-	  				easing: "ease-in-out",
-	  				fill: "forwards"
-				});
-
-				scrollBarOffset = "66.79vw";
-			}
+					scrollBarOffset = offset;
+				}
+			});
 		}, 100);
 	}
 }
