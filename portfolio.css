@@ -77,7 +77,7 @@ html {
 	height: 0.75vh;
 	margin-top: -0.75vh;
 	margin-left: 17.5%;
-	background-color: #8E4585;
+	background-color: #876307;
 	border-radius: 1vw;
 	z-index: 2;
   }
@@ -88,6 +88,22 @@ html {
 	margin-top: 0.15vh;
 	width: 15%;
 	text-align: center;
+  }
+
+  .otherLinks:link {
+	color: rgb(0, 0, 255) !important;
+  }
+
+  .otherLinks:visited { 
+	color: magenta; 
+  }
+
+  .otherLinks:link:active, .otherLinks:visited:active { 
+	color: red; 
+  }
+
+  .blueLinkThing:link {
+	color: rgb(0, 255, 102) !important;
   }
   
   .links {
@@ -114,17 +130,26 @@ html {
   }
   
   /* Hero Section */
-  #galaxy {
-	width: 100vw;
-	height: 93.6vh;
-	background-image: url("Images/WhirpoolGalaxy.jpeg");
-	background-size: cover;
-	opacity: 0.6;
-	text-align: center;
-  }
+#galaxy {
+  width: 100vw;
+  height: 93.6vh;
+  background-image: url("Images/WhirpoolGalaxy.jpeg");
+  background-size: cover;
+  opacity: 0.6;
+  text-align: center;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 0.6;
+}
   
   .onImage {
-	color: red;
+	color: white;
 	font-family: "Open Sans", sans-serif;
   }
   
@@ -205,11 +230,16 @@ html {
 	left: 67.5%;
   }
 
-  hr {
-	margin-bottom: 5vh;
-	color: white;
-	background-color: white;
+  .toolsUsed {
+	font-size: .82vw;
+	background: rgb(18, 100, 125);
+	color: rgb(94, 255, 255);
+	padding: .4vw;
+	margin: 4px 2px;
+	border-radius: 1.02vw;
+	display: inline-block; /* Ensure it's inline and won't push elements */
   }
+
 
   #experienceListUSAA {
 	text-align: left;
